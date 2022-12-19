@@ -33,15 +33,14 @@ export class Login extends React.Component {
     this.setState({ password: e.target.value });
   };
 
-  onSubmit = (e) => {
+  onSubmit= async (e) => {
     console.log("I am here in submit");
     const history = useNavigate();
     const path = window.location.href();
     console.log("path---", path);
     this.setState({ isLoggedIn: true });
     e.preventDefault();
-    let user = localStorage.getItem("formdata");
-    //let user = localStorage.getItem("formdata");
+    let user = await localStorage.getItem("formdata");
     console.log(user);
     this.setState({ redirect: true, isLoading: false });
 
@@ -106,7 +105,7 @@ export class Login extends React.Component {
                 <div className="form-group">
                   <button
                     className="btn btn-primary btn-block"
-                    onClick={this.handleSubmit}
+                    onClick={this.onSubmit}
                     type="submit"
                   >
                     Login &nbsp;&nbsp;&nbsp;

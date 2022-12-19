@@ -29,13 +29,13 @@ export default class Header extends Component {
                 </button>
                 <form className="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
                     <div className="input-group">
-                        <input type="text" className="form-control" placeholder="Search for..." aria-label="Search"
+                        {/* <input type="text" className="form-control" placeholder="Search for..." aria-label="Search"
                                aria-describedby="basic-addon2" />
                             <div className="input-group-append">
                                 <button className="btn btn-primary" type="button">
                                     <i className="fas fa-search"></i>
                                 </button>
-                            </div>
+                            </div> */}
                     </div>
                 </form>
                 <ul className="navbar-nav ml-auto ml-md-0">

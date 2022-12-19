@@ -11,6 +11,10 @@ export default class Sidebar extends Component {
               <i className="fas fa-fw fa-tachometer-alt"></i>
               <span>&nbsp;Dashboard</span>
             </Link>
+            <Link to={"/products"} className="nav-link">
+              <i className="fas fa-fw fa-tachometer-alt"  aria-hidden="true"></i>
+              <span>&nbsp;Products</span>
+            </Link>
           </li>
           <li className="nav-item">
             <Link to={"/chart"} className="nav-link">

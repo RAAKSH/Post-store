@@ -3,10 +3,11 @@ import Header from "../elements/header";
 import Sidebar from "../elements/sidebar";
 import { Link } from "react-router-dom";
 import PostTable from "./PostTable";
+import ProductTable from "./ProductTable";
+import { SearchBar } from "../Components/searchBar";
 
 export default class Dashboard extends Component {
   render() {
-    console.log("I am here in dashboard ");
     return (
       <div>
         <Header />
@@ -69,19 +70,13 @@ export default class Dashboard extends Component {
                   <i className="fas fa-table"></i>
                   User Post Table
                 </div>
+
                 <div className="card-body">
-                  <ol className="breadcrumb">
-                    <li className="breadcrumb-item"> </li>
-                  
-                    <li className="ml-auto">
-                      <Link to={"/addPost"}>Add New Post</Link>
-                    </li>
-                    
-                  </ol>
                   <div className="table-responsive">
                     <PostTable />
                   </div>
                 </div>
+
                 <div className="card-footer small text-muted">
                   Updated yesterday at 11:59 PM
                 </div>
